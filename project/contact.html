@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liên hệ | CodeBreakers Club</title>
+  <!-- Liên kết một file CSS dùng chung cho toàn bộ website (Session 6) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER DÙNG CHUNG ==================== -->
+  <header>
+    <h1>CodeBreakers Club</h1>
+    <p class="tagline">Học lập trình web thực chiến - Chia sẻ đam mê</p>
+  </header>
+
+  <!-- ==================== THANH ĐIỀU HƯỚNG DÙNG CHUNG ==================== -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Trang chủ</a></li>
+      <li><a href="about.html">Giới thiệu</a></li>
+      <li><a href="contact.html" class="active">Liên hệ</a></li>
+    </ul>
+  </nav>
+
+  <!-- ==================== NỘI DUNG CHÍNH (MAIN) ==================== -->
+  <main>
+    <h2>Liên Hệ Với Chúng Tôi (Contact Us)</h2>
+    <p>Bạn muốn trở thành thành viên của CodeBreakers Club hoặc có câu hỏi về các buổi workshop chuyên đề? Đừng ngần ngại kết nối ngay với ban điều hành câu lạc bộ qua các kênh thông tin dưới đây hoặc để lại tin nhắn trực tiếp qua biểu mẫu.</p>
+
+    <!-- Danh sách các kênh liên hệ chính thức (Task 2) -->
+    <h3>Các Kênh Thông Tin Chính Thức</h3>
+    <ul class="contact-channels">
+      <li><strong>📧 Email hỗ trợ:</strong> contact@codebreakers.club</li>
+      <li><strong>📞 Hotline/Zalo:</strong> 0987 654 321 (Chủ nhiệm CLB - Nguyễn Văn A)</li>
+      <li><strong>🌐 Fanpage Facebook:</strong> fb.com/CodeBreakersClub.VNUIS</li>
+      <li><strong>💬 Kênh Discord / GitHub:</strong> github.com/nkhanhhuyenn2106-del/bt4-bt5</li>
+    </ul>
+
+    <!-- Địa điểm và thời gian sinh hoạt của CLB (Task 2) -->
+    <h3>Địa Điểm &amp; Thời Gian Sinh Hoạt</h3>
+    <p>Câu lạc bộ sinh hoạt định kỳ vào <strong>18:00 - 20:30 Thứ Sáu hàng tuần</strong>. Địa điểm tập trung tại <strong>Phòng Lab Máy Tính 302, Tầng 3, Nhà G7</strong>, Trường Quốc tế - Đại học Quốc gia Hà Nội (VNU-IS), 144 Xuân Thủy, Cầu Giấy, Hà Nội.</p>
+
+    <!-- Hình ảnh sơ đồ địa điểm (Task 2: Ít nhất 1 hình ảnh) -->
+    <div class="image-wrapper">
+      <img src="images/contact-map.svg" alt="Sơ đồ vị trí phòng sinh hoạt CLB CodeBreakers tại Nhà G7" width="540" height="280">
+      <p class="caption">Hình 1: Vị trí phòng Lab Máy tính Nhà G7 - nơi diễn ra các buổi sinh hoạt chuyên môn.</p>
+    </div>
+
+    <!-- Biểu mẫu gửi tin nhắn liên hệ (Áp dụng theo Slide 21-22 Session 6) -->
+    <h3>Gửi Tin Nhắn Cho Chúng Tôi</h3>
+    <form class="contact-form" action="#" method="get">
+      <div class="form-group">
+        <label for="fullname">Họ và tên của bạn:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Ví dụ: Nguyễn Văn An" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Địa chỉ Email:</label>
+        <input type="email" id="email" name="email" placeholder="Ví dụ: student@vnu.edu.vn" required>
+      </div>
+
+      <div class="form-group">
+        <label for="topic">Chủ đề quan tâm:</label>
+        <select id="topic" name="topic">
+          <option value="join">Đăng ký tham gia câu lạc bộ</option>
+          <option value="workshop">Hỏi về lịch Workshop sắp tới</option>
+          <option value="collaboration">Hợp tác &amp; Giao lưu công nghệ</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Nội dung tin nhắn:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Nhập lời nhắn hoặc câu hỏi của bạn tại đây..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-submit">Gửi tin nhắn ✉️</button>
+    </form>
+  </main>
+
+  <!-- ==================== FOOTER DÙNG CHUNG ==================== -->
+  <footer>
+    <p>&copy; 2026 CodeBreakers Club — INS2053 Web Authoring &amp; Web Management</p>
+    <p>Khoa Hệ thống Thông tin - Trường Quốc tế (VNU-IS)</p>
+  </footer>
+
+</body>
+</html>

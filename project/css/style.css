@@ -1,0 +1,369 @@
+/* ==========================================================================
+   INS2053 - Web Authoring & Web Management
+   Stylesheet: project/css/style.css
+   One shared stylesheet for the entire 3-page mini-site (Session 6):
+   - index.html (Home)
+   - about.html (About Us)
+   - contact.html (Contact Us)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. RESET & BASE (Chuẩn hoá theo Slide 11)
+   -------------------------------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #1e293b;            /* Màu chữ than đậm, độ tương phản cao */
+  background-color: #f8fafc; /* Màu nền dịu mắt */
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   2. HEADER DÙNG CHUNG (Shared Header)
+   -------------------------------------------------------------------------- */
+header {
+  background-color: #1d4ed8; /* Xanh Royal chủ đạo */
+  color: #ffffff;
+  text-align: center;
+  padding: 2.5rem 1rem;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+
+header .tagline {
+  font-size: 1.1rem;
+  color: #bfdbfe;
+  font-style: italic;
+}
+
+/* --------------------------------------------------------------------------
+   3. THANH ĐIỀU HƯỚNG DÙNG CHUNG (Shared Navigation & Active Highlighting)
+   -------------------------------------------------------------------------- */
+nav {
+  background-color: #1e3a8a; /* Xanh Navy đậm hơn header */
+  padding: 0.75rem 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.45rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+
+/* Class active làm nổi bật trang hiện tại (Trọng tâm bài học Buổi 6) */
+nav a.active {
+  background-color: #2563eb;
+  color: #ffffff;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* --------------------------------------------------------------------------
+   4. VÙNG NỘI DUNG CHÍNH (Main Layout)
+   -------------------------------------------------------------------------- */
+main {
+  max-width: 860px;
+  margin: 2.2rem auto;
+  padding: 2.5rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.06);
+}
+
+/* --------------------------------------------------------------------------
+   5. PHÂN CẤP ĐỀ MỤC & ĐOẠN VĂN (Typography)
+   -------------------------------------------------------------------------- */
+h2 {
+  color: #1d4ed8;            /* Xanh royal cho đề mục cấp 2 */
+  font-size: 1.65rem;
+  margin-top: 1.8rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+main > section:first-of-type h2,
+main > h2:first-of-type {
+  margin-top: 0.5rem;
+}
+
+h3 {
+  color: #b45309;            /* Màu hổ phách/cam đậm phân biệt cho cấp 3 */
+  font-size: 1.3rem;
+  margin-top: 1.6rem;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+  color: #334155;
+}
+
+/* --------------------------------------------------------------------------
+   6. HÌNH ẢNH & KHUNG HÌNH (Image Styling)
+   -------------------------------------------------------------------------- */
+.image-wrapper {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.hero-image img {
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.caption {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+/* --------------------------------------------------------------------------
+   7. DANH SÁCH (Lists)
+   -------------------------------------------------------------------------- */
+ul.activity-list,
+ol.values-list,
+ul.contact-channels {
+  margin: 1rem 0 1.5rem 1.8rem;
+  line-height: 1.75;
+}
+
+ul.activity-list li,
+ol.values-list li,
+ul.contact-channels li {
+  margin-bottom: 0.6rem;
+  color: #334155;
+}
+
+/* --------------------------------------------------------------------------
+   8. COMPONENTS: BENEFITS GRID (Why Join Us)
+   -------------------------------------------------------------------------- */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.benefit-card {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1.3rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+.benefit-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.benefit-card h3 {
+  margin-top: 0;
+  font-size: 1.15rem;
+  color: #1e3a8a;
+}
+
+.benefit-card p {
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+/* --------------------------------------------------------------------------
+   9. COMPONENTS: EVENT CARDS (Sự kiện - Áp dụng Slide 15 & 21)
+   -------------------------------------------------------------------------- */
+.event-card {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-left: 5px solid #1d4ed8; /* Viền nhấn bên trái theo slide bài giảng */
+  border-radius: 0 8px 8px 0;
+  padding: 1.4rem;
+  margin-bottom: 1.4rem;
+}
+
+.event-date {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 0.4rem;
+}
+
+.event-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+  color: #0f172a;
+}
+
+.event-desc {
+  margin-bottom: 0.6rem;
+}
+
+.event-location {
+  font-size: 0.95rem;
+  color: #475569;
+  margin-bottom: 1rem;
+}
+
+/* Nút bấm (Button Component) */
+.btn {
+  display: inline-block;
+  padding: 0.55rem 1.2rem;
+  background-color: #1d4ed8;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #1e40af;
+  color: #ffffff;
+}
+
+/* --------------------------------------------------------------------------
+   10. COMPONENTS: DATA TABLE (Bảng danh sách - Slide 14 & 18)
+   -------------------------------------------------------------------------- */
+table.leaders-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+}
+
+table.leaders-table th,
+table.leaders-table td {
+  border: 1px solid #cbd5e1;
+  padding: 0.8rem 1rem;
+  text-align: left;
+}
+
+table.leaders-table th {
+  background-color: #1e3a8a;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+table.leaders-table tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+table.leaders-table tr:hover {
+  background-color: #f1f5f9;
+}
+
+/* --------------------------------------------------------------------------
+   11. COMPONENTS: CONTACT FORM (Biểu mẫu liên hệ - Slide 21 & 22)
+   -------------------------------------------------------------------------- */
+form.contact-form {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1.8rem;
+  margin: 1.5rem 0;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #1e293b;
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #1e293b;
+  background-color: #ffffff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hiệu ứng focus input rõ ràng theo chuẩn tiếp cận (Accessibility) */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #1d4ed8;
+  box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.2);
+}
+
+.btn-submit {
+  font-size: 1rem;
+  padding: 0.7rem 1.6rem;
+}
+
+/* --------------------------------------------------------------------------
+   12. FOOTER DÙNG CHUNG (Shared Footer)
+   -------------------------------------------------------------------------- */
+footer {
+  background-color: #0f172a; /* Màu than tối */
+  color: #94a3b8;            /* Chữ xám sáng nhẹ */
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 3.5rem;
+}
+
+footer p {
+  color: #94a3b8;
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 270" width="480" height="270">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bg)" rx="10"/>
+  <circle cx="160" cy="110" r="35" fill="#e0e7ff"/>
+  <path d="M120 180 C120 145, 200 145, 200 180 Z" fill="#c7d2fe"/>
+  <circle cx="320" cy="110" r="35" fill="#e0e7ff"/>
+  <path d="M280 180 C280 145, 360 145, 360 180 Z" fill="#c7d2fe"/>
+  <rect x="190" y="130" width="100" height="60" rx="6" fill="#1e293b"/>
+  <rect x="200" y="140" width="80" height="40" rx="3" fill="#38bdf8"/>
+  <text x="240" y="165" font-family="Arial, sans-serif" font-size="14" fill="#0f172a" font-weight="bold" text-anchor="middle">&lt;/&gt;</text>
+  <text x="240" y="225" font-family="Arial, sans-serif" font-size="18" fill="#ffffff" font-weight="bold" text-anchor="middle">CodeBreakers Club Meetup</text>
+</svg>

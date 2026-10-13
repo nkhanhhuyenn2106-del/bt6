@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang chủ | CodeBreakers Club</title>
+  <!-- Liên kết một file CSS dùng chung cho toàn bộ website (Session 6) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER DÙNG CHUNG ==================== -->
+  <header>
+    <h1>CodeBreakers Club</h1>
+    <p class="tagline">Học lập trình web thực chiến - Chia sẻ đam mê</p>
+  </header>
+
+  <!-- ==================== THANH ĐIỀU HƯỚNG DÙNG CHUNG ==================== -->
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Trang chủ</a></li>
+      <li><a href="about.html">Giới thiệu</a></li>
+      <li><a href="contact.html">Liên hệ</a></li>
+    </ul>
+  </nav>
+
+  <!-- ==================== NỘI DUNG CHÍNH (MAIN) ==================== -->
+  <main>
+    <!-- Ảnh minh họa 1: Hero Banner giới thiệu CLB (Task 3: Ít nhất 2 ảnh) -->
+    <div class="image-wrapper hero-image">
+      <img src="images/hero-banner.svg" alt="Banner giới thiệu CodeBreakers Club" width="760" height="280">
+    </div>
+
+    <!-- Phần 1: Chào mừng (Welcome Section) -->
+    <section class="intro-section">
+      <h2>Chào mừng bạn đến với CodeBreakers Club!</h2>
+      <p>CodeBreakers là câu lạc bộ học thuật dành cho sinh viên đam mê công nghệ thông tin, thiết kế và phát triển ứng dụng web tại Trường Quốc tế - ĐHQGHN (VNU-IS). Tại đây, chúng mình cùng nhau kiến tạo những sản phẩm thực tế, từ kiến trúc HTML5 ngữ nghĩa, tối ưu CSS3 cho đến các công nghệ web hiện đại.</p>
+    </section>
+
+    <!-- Phần 2: What We Do - Hoạt động nổi bật -->
+    <section class="activities-section">
+      <h2>Hoạt động của chúng tôi (What We Do)</h2>
+      <p>Câu lạc bộ duy trì các hoạt động chuyên môn đều đặn nhằm giúp mỗi thành viên phát triển toàn diện kỹ năng:</p>
+      
+      <!-- Ảnh minh họa 2: Buổi Workshop lập trình (Task 3: Ít nhất 2 ảnh) -->
+      <div class="image-wrapper">
+        <img src="images/coding-workshop.svg" alt="Workshop lập trình web thực chiến" width="540" height="280">
+        <p class="caption">Hình 1: Các thành viên thực hành xây dựng giao diện chuẩn responsive trong workshop.</p>
+      </div>
+
+      <ul class="activity-list">
+        <li><strong>Workshop chuyên đề:</strong> Học từ thực hành qua các bài lab HTML, CSS Box Model, Flexbox và Grid.</li>
+        <li><strong>Code Review hàng tuần:</strong> Chấm chéo mã nguồn theo tiêu chuẩn rubric bài tập và chia sẻ best practices.</li>
+        <li><strong>Mini Hackathon:</strong> Thử thách giải quyết bài toán giao diện web thực tế trong 24 giờ.</li>
+      </ul>
+    </section>
+
+    <!-- Phần 3: Why Join Us? - 3 Lợi ích khi tham gia -->
+    <section class="benefits-section">
+      <h2>Tại sao nên tham gia? (Why Join Us?)</h2>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">🚀</div>
+          <h3>Thực chiến dự án</h3>
+          <p>Không chỉ học lý thuyết, bạn sẽ tự tay xây dựng các website nhiều trang hoàn chỉnh để đưa vào Portfolio cá nhân.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">🤝</div>
+          <h3>Cộng đồng hỗ trợ</h3>
+          <p>Được các anh chị khóa trên hướng dẫn tận tình, giải đáp thắc mắc về môn học INS2053 và định hướng nghề nghiệp.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">🏆</div>
+          <h3>Rèn luyện kỹ năng mềm</h3>
+          <p>Phát triển kỹ năng thuyết trình, quay video báo cáo kỹ thuật và làm việc nhóm thông qua hệ thống Git &amp; GitHub.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Phần 4: Upcoming Events / Latest News (Sự kiện sắp diễn ra) -->
+    <section class="events-section">
+      <h2>Sự kiện sắp diễn ra (Upcoming Events)</h2>
+      <p>Đừng bỏ lỡ các buổi sinh hoạt chuyên môn hấp dẫn trong tháng này:</p>
+
+      <div class="event-card">
+        <div class="event-date">📅 17/10/2026 | 18:00 - 20:30</div>
+        <h3>Workshop: Làm chủ CSS3 &amp; Web Typography</h3>
+        <p class="event-desc">Khám phá cách sử dụng Google Fonts, tạo các hiệu ứng chuyển động mượt mà với CSS Transition và tổ chức mã nguồn CSS khoa học.</p>
+        <p class="event-location">📍 <strong>Địa điểm:</strong> Phòng Lab Máy tính 302, Nhà G7</p>
+        <a href="contact.html" class="btn">Đăng ký tham gia ngay</a>
+      </div>
+
+      <div class="event-card">
+        <div class="event-date">📅 24/10/2026 | 14:00 - 17:00</div>
+        <h3>Mini-Hackathon: Thiết Kế Website Đa Trang 2026</h3>
+        <p class="event-desc">Thi đấu theo nhóm 2 người để hoàn thiện một mini-site gồm 3 trang đạt chuẩn Semantic HTML và Responsive Design.</p>
+        <p class="event-location">📍 <strong>Địa điểm:</strong> Hội trường tầng 2, Nhà C, ĐHQGHN</p>
+        <a href="contact.html" class="btn">Tìm hiểu thêm</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER DÙNG CHUNG ==================== -->
+  <footer>
+    <p>&copy; 2026 CodeBreakers Club — INS2053 Web Authoring &amp; Web Management</p>
+    <p>Khoa Hệ thống Thông tin - Trường Quốc tế (VNU-IS)</p>
+  </footer>
+
+</body>
+</html>

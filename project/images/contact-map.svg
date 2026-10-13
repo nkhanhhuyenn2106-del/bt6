@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 280" width="540" height="280">
+  <defs>
+    <linearGradient id="mapBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#mapBg)" rx="10"/>
+  
+  <!-- Stylized Map Grids & Streets -->
+  <line x1="40" y1="90" x2="500" y2="90" stroke="#334155" stroke-width="8"/>
+  <line x1="40" y1="180" x2="500" y2="180" stroke="#334155" stroke-width="12"/>
+  <line x1="160" y1="30" x2="160" y2="250" stroke="#334155" stroke-width="10"/>
+  <line x1="360" y1="30" x2="360" y2="250" stroke="#334155" stroke-width="8"/>
+  
+  <!-- Campus Buildings -->
+  <rect x="70" y="115" width="70" height="50" rx="4" fill="#1e3a8a"/>
+  <text x="105" y="145" font-family="Arial, sans-serif" font-size="12" fill="#bfdbfe" font-weight="bold" text-anchor="middle">Nhà C</text>
+  
+  <rect x="180" y="115" width="90" height="50" rx="4" fill="#1d4ed8" stroke="#60a5fa" stroke-width="2"/>
+  <text x="225" y="145" font-family="Arial, sans-serif" font-size="13" fill="#ffffff" font-weight="bold" text-anchor="middle">Nhà G7</text>
+  
+  <rect x="385" y="115" width="80" height="50" rx="4" fill="#1e3a8a"/>
+  <text x="425" y="145" font-family="Arial, sans-serif" font-size="12" fill="#bfdbfe" font-weight="bold" text-anchor="middle">Lab IT</text>
+
+  <!-- Location Pin -->
+  <g transform="translate(225, 80)">
+    <circle cx="0" cy="0" r="16" fill="#ef4444"/>
+    <circle cx="0" cy="0" r="7" fill="#ffffff"/>
+    <path d="M0 14 L0 26" stroke="#ef4444" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Info Tag -->
+  <rect x="135" y="210" width="270" height="42" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="270" y="236" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#38bdf8" text-anchor="middle">📍 Lab Máy Tính - Phòng 302, Nhà G7</text>
+</svg>
