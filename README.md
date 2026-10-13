@@ -45,7 +45,4 @@ Dự án bài tập môn học **INS2053 - Web Authoring & Web Management**.
 - **Trang chủ phong phú:** Gồm phần Chào mừng, Hoạt động (What We Do), 3 Lợi ích (Why Join Us?), 2 ảnh minh họa vector sắc nét và khối sự kiện sắp diễn ra (Event Cards với đường viền nhấn bên trái).
 - **Trang About:** Bổ sung bảng thành viên ban điều hành (Data Table) theo chuẩn bài học.
 
-## Hướng dẫn nộp bài
-1. Mở file `homework/submissions.md`, điền Họ tên và MSSV.
-2. Quay video 1–2 phút bằng OBS Studio giải thích code cho từng buổi, upload lên Google Drive (chế độ Public/Viewer), dán link vào file `homework/submissions.md`.
-3. Chạy `git add .`, `git commit -m "HW6: Complete 3-page mini-site with navigation"` và `git push` lên GitHub.
+
